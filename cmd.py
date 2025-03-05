@@ -19,6 +19,7 @@ if sys.argv[1]=="0":
         )
         #print(rq.text)
         rqj=json.loads(rq.text)
+        rqj=rqj["result"]
         for i in rqj:
             offset=int(i["update_id"])
             if i["message"]["from"]["username"]!="terryp12":
@@ -37,7 +38,7 @@ rq=requests.post(
     }
 )
 js=json.loads(rq.text)
-cid=int(js[0]["message"]["chat"]["id"])
+cid=int(js["result"][0]["message"]["chat"]["id"])
 while True:
     prm=input()
     requests.post(
