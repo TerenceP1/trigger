@@ -36,7 +36,7 @@ rq=requests.post(
         "allowed_updates": ["message"]
     }
 )
-js=json.loads(rq)
+js=json.loads(rq.text)
 cid=int(js[0]["message"]["chat"]["id"])
 while True:
     prm=input()
