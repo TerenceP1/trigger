@@ -6,7 +6,7 @@ from datetime import datetime
 import time
 import keyboard
 if len(sys.argv)==1:
-    raise Exception
+    os.system(".\gogogo.bat")
 if len(sys.argv)==3:
     os.system(r"C:\Users\teren\anaconda3\python.exe -u cmd.py 0 | cmd.exe 2>&1 | C:\Users\teren\anaconda3\python.exe cmd.py 1")
 token="7916790982:AAHfrFvAHSYtCw5Qx6DhmdAGcq2yE6H5yYo"
